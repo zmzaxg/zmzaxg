@@ -13,15 +13,15 @@
 
 
 <!--头部-->
-<link rel="import" href="tb/1.html" id="page0"/>
+<link rel="import" href="tb/1.html?randomId=<%=console.log(Date.now().toString(36))%>" id="page0"/>
 <!--内容-->
-<link rel="import" href="nr/1.html" id="page200"/>
+<link rel="import" href="nr/1.html?randomId=<%=console.log(Date.now().toString(36))%>" id="page200"/>
 <!--尾部-->
-<link rel="import" href="wb/1.html" id="page300"/>
+<link rel="import" href="wb/1.html?randomId=<%=console.log(Date.now().toString(36))%>" id="page300"/>
 </head>
   <body>
 <!--头部-->
-    <script type="text/javascript">
+    <script type="text/javascript" src="tb/1.html?randomId=<%=console.log(Date.now().toString(36))%>">
       document.write(page0.import.body.innerHTML);
     </script>
 <!--内容-->

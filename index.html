@@ -15,15 +15,6 @@
 <!--导入外部div类ajax异步提交请求js文件动态加载文件数据-->
 <!--script src="js/div-ajax.js"></script-->
 <script type="text/javascript">
-  $(function () {
-    /* 使用ajax异步提交请求数据，响应数据（回调函数） */
-    $.get("tb/1.html",function (data) {
-        $("#tb1h").html(data);
-    });
-    $.get("nr/1.html",function (data) {
-        $("#nr1h").html(data);
-    });
-  });
 </script>
 
 
@@ -37,17 +28,17 @@
 </head>
   <body>
 <!--头部-->
-    <!--script type="text/javascript">
+    <script type="text/javascript">
       document.write(page0.import.body.innerHTML);
-    </script-->
+    </script>
 <!--内容-->
     <!--script type="text/javascript">
       document.write(page200.import.body.innerHTML);
     </script-->
 <!--尾部-->
-    <!--script type="text/javascript">
+    <script type="text/javascript">
       document.write(page300.import.body.innerHTML);
-    </script-->
+    </script>
     
     
     

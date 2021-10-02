@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>尾部 </title>
+		<style type="text/css">
+			#bottomTxt{
+				color:blue;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<span id="bottomTxt"></br></br></br></br>这里是尾部信息</span>
+	</body>
+	<script>
+		function demo(){
+		
+			var  bottomTxtObj = document.getElementById("bottomTxt");
+			bottomTxtObj.innerHTML=bottomTxtObj.innerHTML+",尾部追加信息！";
+		}
+		demo();
+	</script>
+</html>

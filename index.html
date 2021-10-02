@@ -14,11 +14,11 @@
 
 
 <!--头部-->
-<link rel="import" href="tb/1.html" id="page0"/>
+<link rel="import" href="tb/1.html?time=' + new Date().getTime() + '" id="page0"/>
 <!--内容-->
-<link rel="import" href="nr/1.html" id="page200"/>
+<link rel="import" href="nr/1.html?time=' + new Date().getTime() + '" id="page200"/>
 <!--尾部-->
-<link rel="import" href="wb/1.html" id="page300"/>
+<link rel="import" href="wb/1.html?time=' + new Date().getTime() + '" id="page300"/>
 </head>
   <body>
 <!--头部-->
@@ -30,17 +30,15 @@
       document.write(page200.import.body.innerHTML);
     </script-->
 <!--尾部-->
-    <!--script type="text/javascript">
+    <script type="text/javascript">
       document.write(page300.import.body.innerHTML);
-    </script-->
-    
-    
-    <div id="wb1h"></div>
-    <include src="wb/1.html"></include>
-    
-    <script>
-          $("#wb1h").load("wb/1.html");
     </script>
+    
+    
+    
+    
+    
+    
   </body>
 
 

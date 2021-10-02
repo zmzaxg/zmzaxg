@@ -13,7 +13,18 @@
 
 
 <!--导入外部div类ajax异步提交请求js文件动态加载文件数据-->
-<script src="js/div-ajax.js"></script>
+<!--script src="js/div-ajax.js"></script-->
+<script type="text/javascript">
+  $(function () {
+    /* 使用ajax异步提交请求数据，响应数据（回调函数） */
+    $.get("tb/1.html",function (data) {
+        $("#tb1h").html(data);
+    });
+    $.get("nr/1.html",function (data) {
+        $("#nr1h").html(data);
+    });
+  });
+</script>
 
 
 
@@ -42,6 +53,7 @@
     
 <!--div-头部-->
     <div id="tb1h"></div>
+    <div id="nr1j"></div>
   </body>
 
 

@@ -14,37 +14,24 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Cache-control" content="no-cache">
 <meta http-equiv="Cache" content="no-cache">
+<!--让浏览器不缓存html静态-->
 
 <title>zmzaxg.too-cs</title>
 
 
 
-
-<!--头部-->
-<link rel="import" href="tb/1.html?time=' + new Date().getTime() + '" id="page0"/>
-<!--内容-->
-<link rel="import" href="nr/1.html?time=' + new Date().getTime() + '" id="page200"/>
-<!--尾部-->
-<link rel="import" href="wb/1.html?time=' + new Date().getTime() + '" id="page300"/>
+<!--加载使用js将获取到的文件路径读取并使用include展现-->
+<script src="js/include-hqwjnr.js"><script>
+<!--<include src="文件路径"></include>-->
+    
 </head>
   <body>
 <!--头部-->
-    <script type="text/javascript">
-      document.write(page0.import.body.innerHTML);
-    </script>
+    <include src="tb/1.html"></include>
 <!--内容-->
-    <!--script type="text/javascript">
-      document.write(page200.import.body.innerHTML);
-    </script-->
+    <include src="nr/1.html"></include>
 <!--尾部-->
-    <script type="text/javascript">
-      document.write(page300.import.body.innerHTML);
-    </script>
-    
-    
-    
-    
-    
+    <include src="wb/1.html"></include>
     
   </body>
 

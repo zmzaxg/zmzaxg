@@ -77,7 +77,7 @@ if (xmlhttp.readyState==4){
 	document.getElementById("web_tb").innerHTML=s;
 	xmlhttp=null;
 }}
-xmlhttp.open("GET","./web_txt/tb.txt",true);xmlhttp.send(null);};
+xmlhttp.open("GET","./web_txt/tb.txt?randomId=<%=Math.random()%>",true);xmlhttp.send(null);};
 //头部内容
 //内容
 //ajaxWeb_NR('NR');//已使用最后的线程总控
@@ -89,7 +89,7 @@ if (xmlhttp.readyState==4){
 	document.getElementById("web_nr").innerHTML=s;
 	xmlhttp=null;
 }}
-xmlhttp.open("GET","./web_txt/nr.txt",true);xmlhttp.send(null);}
+xmlhttp.open("GET","./web_txt/nr.txt?randomId=<%=Math.random()%>",true);xmlhttp.send(null);}
 //内容
 //尾部内容
 //ajaxWeb_WB('WB');//已使用最后的线程总控
@@ -101,7 +101,7 @@ if (xmlhttp.readyState==4){
 	document.getElementById("web_wb").innerHTML=s;
 	xmlhttp=null;
 }}
-xmlhttp.open("GET","./web_txt/wb.txt",true);xmlhttp.send(null);}
+xmlhttp.open("GET","./web_txt/wb.txt?randomId=<%=Math.random()%>",true);xmlhttp.send(null);}
 //尾部内容
 
 

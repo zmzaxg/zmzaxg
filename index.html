@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js" lang="zh_CN">
 <head>
+
+<script src="//lib.baomitu.com/jquery/3.4.1/jquery.min.js"></script>
+<!--音乐需要的js||yy.zmzaxg.top-->
 <meta charset="UTF-8">
 <meta http-equiv="cache-control" content="max-age=0" />
 <meta http-equiv="cache-control" content="no-cache" />
@@ -16,17 +19,111 @@
 <meta http-equiv="Cache" content="no-cache">
 <!--让浏览器不缓存html静态-->
 
-<title>zmzaxg.too-cs</title>
+<title>zmzaxg | 南凝呀</title>
 
+<meta property="og:locale" content="zh_CN">
 
-
-<!--加载使用js将获取到的文件路径读取并使用include展现-->
-<script src="js/hq.js?'+Math.random();+'"></script>
-    
 </head>
-  <body>
-    <include src="wb/1.html"></include><include src="wb/1.html"></include><include src="wb/1.html"></include>
-  </body>
+
+<script language="javascript" type="text/javascript">
+//《《《《《《《《《《《《《《《《《《《《《《《《《《模块介绍《《《《《《《《《《《《《《《《《《《《《《《《《《《《《
+//控制模块开关
+//点击控制//javascript:ajaxGetHTML('');<!--a>
+//点击控制//web URL:<input type=text id="xurl" ondblclick="javascript:ajaxGetHTML(this.value);" value="http://www.163.com" size="50">
+//点击控制//<input type="button" name="Submit" value="Test" onClick="javascript:ajaxGetHTML('');">
+
+//主动写入控制
+//ajaxGetHTML('');
+//控制模块开关
+//模块内容
+//function ajaxGetHTML(webURL){
+//var url=webURL;
+//
+//if(url=="") //点击控制//url=document.getElementById("xurl").value;
+//    var xmlhttp;
+//    try{
+//        xmlhttp=new ActiveXObject("Msxml2.XMLHTTP");
+//    }catch(e){
+//        try{
+//                xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+//            }catch(e){    }
+//    }
+ 
+//      if(!xmlhttp) xmlhttp=new XMLHttpRequest();
+//      xmlhttp.onreadystatechange =function(){
+//        if (xmlhttp.readyState==4){
+//          var s=xmlhttp.responseText;
+//          //控制不解析代码输出//s=s.replace(/</g,"&lt;");
+//          //控制不解析代码输出//s=s.replace(/>/g,"&gt;");
+//          document.getElementById("box01").innerHTML=s;
+//          xmlhttp=null;
+//		  //var x1 document.getElementById("box01").innerHTML=s;
+//        }
+//      }
+//	  //远程链接或者路径
+//      xmlhttp.open("GET","./web_txt/tb.txt",true);
+//      xmlhttp.send(null);
+//};
+//《《《《《《《《《《《《《《《《《《《《《《《《《《模块介绍《《《《《《《《《《《《《《《《《《《《《《《《《《《《《
+
+//《《《《《《《《《《《《《《《《《《《《《《《《《《正式使用《《《《《《《《《《《《《《《《《《《《《《《《《《《《《
+//头部内容
+//ajaxWeb_TB('TB');//已使用最后的线程总控
+function ajaxWeb_TB(TB){var url=TB;
+if(url=="")
+var xmlhttp;try{xmlhttp=new ActiveXObject("Msxml2.XMLHTTP");}catch(e){try{xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");}catch(e){}}if(!xmlhttp) xmlhttp=new XMLHttpRequest();xmlhttp.onreadystatechange =function(){
+if (xmlhttp.readyState==4){
+	var s=xmlhttp.responseText;
+	document.getElementById("web_tb").innerHTML=s;
+	xmlhttp=null;
+}}
+xmlhttp.open("GET","./web_txt/tb.txt",true);xmlhttp.send(null);};
+//头部内容
+//内容
+//ajaxWeb_NR('NR');//已使用最后的线程总控
+function ajaxWeb_NR(NR){var url=NR;
+if(url=="")
+var xmlhttp;try{xmlhttp=new ActiveXObject("Msxml2.XMLHTTP");}catch(e){try{xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");}catch(e){}}if(!xmlhttp) xmlhttp=new XMLHttpRequest();xmlhttp.onreadystatechange =function(){
+if (xmlhttp.readyState==4){
+	var s=xmlhttp.responseText;
+	document.getElementById("web_nr").innerHTML=s;
+	xmlhttp=null;
+}}
+xmlhttp.open("GET","./web_txt/nr.txt",true);xmlhttp.send(null);}
+//内容
+//尾部内容
+//ajaxWeb_WB('WB');//已使用最后的线程总控
+function ajaxWeb_WB(WB){var url=WB;
+if(url=="")
+var xmlhttp;try{xmlhttp=new ActiveXObject("Msxml2.XMLHTTP");}catch(e){try{xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");}catch(e){}}if(!xmlhttp) xmlhttp=new XMLHttpRequest();xmlhttp.onreadystatechange =function(){
+if (xmlhttp.readyState==4){
+	var s=xmlhttp.responseText;
+	document.getElementById("web_wb").innerHTML=s;
+	xmlhttp=null;
+}}
+xmlhttp.open("GET","./web_txt/wb.txt",true);xmlhttp.send(null);}
+//尾部内容
 
 
+//《《《《《《《《《《《《《《《《《《《《《《《《《《正式使用《《《《《《《《《《《《《《《《《《《《《《《《《《《《《
+ajaxWeb_TB('TB');
+ajaxWeb_NR('NR');
+ajaxWeb_WB('WB');
+
+
+</script>
+<body>
+<!--
+<br>
+请求的可以是某个.HTML页面, 或 .CSS文件, 或 .JS文件, 或.TXT 文件等文件<br>
+<hr size="1" color="#FF6600">
+<div id="box01"></div>
+<-->
+
+
+
+<div id="web_tb"></div>
+<div id="web_nr"></div>
+<div id="web_wb"></div>
+</body>
 </html>
